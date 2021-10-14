@@ -46,5 +46,8 @@ Part 2:
   8. Screenshot of my instance:
   
   <img width="1440" alt="image" src="https://user-images.githubusercontent.com/70331036/137244230-d87baea8-de38-4f91-ab73-e38f6fcac295.png">
+  
+  
+  Resources that helped me: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html#Add_IGW_Create_Subnet
 
 
