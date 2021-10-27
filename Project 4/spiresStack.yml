@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: >-
+Description: >- Spires CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address
   Testing area for AWS: This template builds a linux VM for CEG 2350 @ WSU.
 Parameters:
   KeyName:
@@ -115,8 +115,8 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
-          Value: CEG2350 Ubuntu
+        - Key: spiresStack
+          Value: CEG3120 Ubuntu
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
@@ -130,6 +130,8 @@ Resources:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
-            apt-get install -y \
-              replace-me && \
+            apt-get install git -y && \
+            apt-get install python3 -y && \
+            apt-get install pip3 -y && \
+            sudo hostnamectl set-hostname SpiresCF && \
             reboot
