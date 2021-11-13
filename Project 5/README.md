@@ -15,7 +15,7 @@ Part 2:
    Resource I used: https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts
                     https://dilliganesh.wordpress.com/2017/03/02/how-to-configure-http-load-balancer-with-haproxy-on-linux/
                     
-               -These sources explained haproxy and load balancing as well as gave an example of /etc/hosts files for the webservers
+     -These sources explained haproxy and load balancing as well as gave an example of /etc/hosts files for the webservers
    
    
    
@@ -29,4 +29,5 @@ Part 2:
    I restarted apache2 by typing in this command: 'sudo service apache2 reload'
    
    Resource that I used: https://ubuntu.com/tutorials/install-and-configure-apache#5-activating-virtualhost-file
-        -It described some of the basics for the apache program.
+   
+      -This source explained some of the basics for the apache program. 
